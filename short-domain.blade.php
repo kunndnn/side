@@ -1126,7 +1126,7 @@
                     <table id="example" class="display table table-striped table-bordered">
                         <thead>
                             <tr>
-                                <th><input type="checkbox" id="all" name="all"> <label for="all">
+                                <th><input type="checkbox" id="expiring-domain-checkbox-all" class="expiring-domain-checkbox-all"> <label for="expiring-domain-checkbox-all">
                                         Select All</label></th>
                                 <th>Domain List</th>
                                 <th>Domain Character Length</th>
@@ -1377,7 +1377,8 @@
                     dataTable = $("#example").DataTable({
                         data: data,
                         columns: [{
-                                title: `<input type="checkbox" name="tr" class="ux-checkbox-input expiring-domain-checkbox-all"> <label for="all">Select All</label>`
+                                title: `<input type="checkbox" id="expiring-domain-checkbox-all" name="tr" class="ux-checkbox-input expiring-domain-checkbox-all"> <label for="expiring-domain-checkbox-all">
+                                        Select All</label>`
                             },
                             {
                                 title: "Domain List"
