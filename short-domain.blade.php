@@ -1,19 +1,26 @@
 @extends('frontend.layout.app')
 
 @section('content')
-<style>
-body, div{
-    background-color: rgb(50, 49, 49);
-    color:white
-}
-td{
-    background-color: pink !important
-}
-h1,h2,h3,h4,h5,h6{
-    color: white !important;
-}
-    
-</style>
+    <style>
+        body,
+        div {
+            background-color: rgb(50, 49, 49);
+            color: white
+        }
+
+        td {
+            background-color: pink !important
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: white !important;
+        }
+    </style>
     <section class="domail-table-sec pb-5 section-ptb-100">
         <div class="container-fluid">
             <div class="table-filter-box">
@@ -1100,6 +1107,20 @@ h1,h2,h3,h4,h5,h6{
 
     <section class="table-sec section-mb-75">
         <div class="container-fluid ">
+
+
+            <div class="row expiring-domain-title">
+                <div class="col-md-5">
+                    <button id="export-csv" fdprocessedid="lxgxzc"><span><i class="fa fa-file"></i> Export to
+                            CSV</span></button>
+                    <button id="export-excel" fdprocessedid="bk2gt1"><span><i class="fa fa-file-excel-o"></i> Export
+                            to
+                            Excel</span></button>
+                </div>
+            </div>
+
+
+
             <div class="table-container">
                 <div class="table-responsive">
                     <table id="example" class="display table table-striped table-bordered">
@@ -1120,7 +1141,8 @@ h1,h2,h3,h4,h5,h6{
                             <!-- Add more rows as needed -->
                             <tr>
                                 <td>
-                                    <input type="checkbox" name="tr" class="ux-checkbox-input expiring-domain-checkbox" data-value=""/>
+                                    <input type="checkbox" name="tr"
+                                        class="ux-checkbox-input expiring-domain-checkbox" data-value="" />
                                 </td>
                                 <td>google.io</td>
                                 <td>9</td>
@@ -1129,8 +1151,10 @@ h1,h2,h3,h4,h5,h6{
                                 <td>-</td>
                                 <td>-</td>
                                 <td>2</td>
-                            </tr><tr>
-                                <td><input type="checkbox" name="tr" class="ux-checkbox-input expiring-domain-checkbox" data-value=""/></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="tr"
+                                        class="ux-checkbox-input expiring-domain-checkbox" data-value="" /></td>
                                 <td>example1.io</td>
                                 <td>15</td>
                                 <td>7</td>
@@ -1140,7 +1164,8 @@ h1,h2,h3,h4,h5,h6{
                                 <td>1</td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="tr" class="ux-checkbox-input expiring-domain-checkbox" data-value=""/></td>
+                                <td><input type="checkbox" name="tr"
+                                        class="ux-checkbox-input expiring-domain-checkbox" data-value="" /></td>
                                 <td>testdomain.date</td>
                                 <td>11</td>
                                 <td>4</td>
@@ -1150,7 +1175,8 @@ h1,h2,h3,h4,h5,h6{
                                 <td>3</td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="tr" class="ux-checkbox-input expiring-domain-checkbox" data-value=""/></td>
+                                <td><input type="checkbox" name="tr"
+                                        class="ux-checkbox-input expiring-domain-checkbox" data-value="" /></td>
                                 <td>4444.co</td>
                                 <td>13</td>
                                 <td>-</td>
@@ -1160,7 +1186,8 @@ h1,h2,h3,h4,h5,h6{
                                 <td>4</td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="tr" class="ux-checkbox-input expiring-domain-checkbox" data-value=""/></td>
+                                <td><input type="checkbox" name="tr"
+                                        class="ux-checkbox-input expiring-domain-checkbox" data-value="" /></td>
                                 <td>1.net</td>
                                 <td>10</td>
                                 <td>-</td>
@@ -1170,7 +1197,8 @@ h1,h2,h3,h4,h5,h6{
                                 <td>2</td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="tr" class="ux-checkbox-input expiring-domain-checkbox" data-value=""/></td>
+                                <td><input type="checkbox" name="tr"
+                                        class="ux-checkbox-input expiring-domain-checkbox" data-value="" /></td>
                                 <td>online-site.org</td>
                                 <td>7</td>
                                 <td>5</td>
@@ -1180,7 +1208,8 @@ h1,h2,h3,h4,h5,h6{
                                 <td>3</td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="tr" class="ux-checkbox-input expiring-domain-checkbox" data-value=""/></td>
+                                <td><input type="checkbox" name="tr"
+                                        class="ux-checkbox-input expiring-domain-checkbox" data-value="" /></td>
                                 <td>cooldomain.app</td>
                                 <td>8</td>
                                 <td>1</td>
@@ -1190,7 +1219,8 @@ h1,h2,h3,h4,h5,h6{
                                 <td>2</td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="tr" class="ux-checkbox-input expiring-domain-checkbox" data-value=""/></td>
+                                <td><input type="checkbox" name="tr"
+                                        class="ux-checkbox-input expiring-domain-checkbox" data-value="" /></td>
                                 <td>brandname.io</td>
                                 <td>9</td>
                                 <td>6</td>
@@ -1200,7 +1230,8 @@ h1,h2,h3,h4,h5,h6{
                                 <td>1</td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="tr" class="ux-checkbox-input expiring-domain-checkbox" data-value=""/></td>
+                                <td><input type="checkbox" name="tr"
+                                        class="ux-checkbox-input expiring-domain-checkbox" data-value="" /></td>
                                 <td>newdomain.info</td>
                                 <td>6</td>
                                 <td>3</td>
@@ -1210,7 +1241,8 @@ h1,h2,h3,h4,h5,h6{
                                 <td>4</td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="tr" class="ux-checkbox-input expiring-domain-checkbox" data-value=""/></td>
+                                <td><input type="checkbox" name="tr"
+                                        class="ux-checkbox-input expiring-domain-checkbox" data-value="" /></td>
                                 <td>tech-space.io</td>
                                 <td>14</td>
                                 <td>8</td>
@@ -1220,7 +1252,8 @@ h1,h2,h3,h4,h5,h6{
                                 <td>2</td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="tr" class="ux-checkbox-input expiring-domain-checkbox" data-value=""/></td>
+                                <td><input type="checkbox" name="tr"
+                                        class="ux-checkbox-input expiring-domain-checkbox" data-value="" /></td>
                                 <td>findme.net</td>
                                 <td>5</td>
                                 <td>2</td>
@@ -1230,7 +1263,8 @@ h1,h2,h3,h4,h5,h6{
                                 <td>1</td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="tr" class="ux-checkbox-input expiring-domain-checkbox" data-value=""/></td>
+                                <td><input type="checkbox" name="tr"
+                                        class="ux-checkbox-input expiring-domain-checkbox" data-value="" /></td>
                                 <td>webservice88888888.org</td>
                                 <td>10</td>
                                 <td>3</td>
@@ -1240,7 +1274,8 @@ h1,h2,h3,h4,h5,h6{
                                 <td>3</td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="tr" class="ux-checkbox-input expiring-domain-checkbox" data-value=""/></td>
+                                <td><input type="checkbox" name="tr"
+                                        class="ux-checkbox-input expiring-domain-checkbox" data-value="" /></td>
                                 <td>1234561.io</td>
                                 <td>12</td>
                                 <td>4</td>
@@ -1249,7 +1284,7 @@ h1,h2,h3,h4,h5,h6{
                                 <td>10</td>
                                 <td>4</td>
                             </tr>
-                            
+
                         </tbody>
                     </table>
                 </div>
@@ -1276,7 +1311,7 @@ h1,h2,h3,h4,h5,h6{
                     $('.tldsAll').prop('checked', true) : // check all
                     $('.tldsAll').prop('checked', false); // uncheck all
             });
-            
+
             // for market place
             $('input[name="select-all-market"]').on('change', function() {
                 const input = $(this);
@@ -1284,7 +1319,7 @@ h1,h2,h3,h4,h5,h6{
                     $('input[name="market"]').prop('checked', true) : // check all
                     $('input[name="market"]').prop('checked', false); // uncheck all
             });
-            
+
             // for market place
             $('input[name="select-all-type"]').on('change', function() {
                 const input = $(this);
@@ -1307,7 +1342,7 @@ h1,h2,h3,h4,h5,h6{
             }
 
 
-            let dataTable =  $("#example").DataTable({}); // Variable to hold the DataTable instance
+            let dataTable = $("#example").DataTable({}); // Variable to hold the DataTable instance
             // socket.on('getShortDomains', async (body) => {
             //     $('#loader').hide();
             //     console.log({
@@ -1430,23 +1465,23 @@ h1,h2,h3,h4,h5,h6{
                 const options = $('input[name="options"]:checked').map(function() {
                     return $(this).val();
                 }).get();
-                
+
                 const market = $('input[name="market"]:checked').map(function() {
                     return $(this).val().toLowerCase();
                 }).get();
-                
+
                 const domainSearch = $('input[name="domain-search"]').val();
 
                 let ageFrom = $('input[name="ageFrom"]').val();
                 let ageTo = $('input[name="ageTo"]').val();
                 let priceFrom = $('input[name="priceFrom"]').val();
                 let priceTo = $('input[name="priceTo"]').val();
-                
-                if(ageFrom)ageFrom=Number(ageFrom);
-                if(ageTo)ageTo=Number(ageTo);
-                if(priceFrom)priceFrom=Number(priceFrom);
-                if(priceTo)priceTo=Number(priceTo);
-                
+
+                if (ageFrom) ageFrom = Number(ageFrom);
+                if (ageTo) ageTo = Number(ageTo);
+                if (priceFrom) priceFrom = Number(priceFrom);
+                if (priceTo) priceTo = Number(priceTo);
+
 
                 // Clear previous search filters
                 $.fn.dataTable.ext.search = [];
@@ -1560,10 +1595,10 @@ h1,h2,h3,h4,h5,h6{
                     const domainName = data[1].trim();
                     const domainPattern = getDomainPattern(domainName);
                     const matchesExtension = tlds.length > 0 && tlds
-                    .some(ext => domainName.endsWith(ext));
-                    
+                        .some(ext => domainName.endsWith(ext));
+
                     const domainSource = data[4].trim().toLowerCase();
-                    
+
                     // Check for pattern match
                     const domainWithoutExt = domainName.split('.')[0]
                     const matchesPatternResult = regexPatterns.length > 0 && regexPatterns.some(regex => {
@@ -1573,38 +1608,138 @@ h1,h2,h3,h4,h5,h6{
 
                     //age check 
                     const domainAge = data[3].trim();
-                    const ageStart= ageFrom &&  !isNaN(domainAge) && domainAge>=ageFrom
-                    const ageEnd= ageTo && !isNaN(domainAge) && domainAge<=ageTo
-                    
+                    const ageStart = ageFrom && !isNaN(domainAge) && domainAge >= ageFrom
+                    const ageEnd = ageTo && !isNaN(domainAge) && domainAge <= ageTo
+
                     //price check
                     const domainPrice = data[6].trim();
-                    const priceStart= priceFrom &&  !isNaN(domainPrice) && domainPrice>=priceFrom
-                    const priceEnd= priceTo && !isNaN(domainPrice) && domainPrice<=priceTo
-                    
-                    
-                    const markets=market.length>0&& market.includes(domainSource);
+                    const priceStart = priceFrom && !isNaN(domainPrice) && domainPrice >= priceFrom
+                    const priceEnd = priceTo && !isNaN(domainPrice) && domainPrice <= priceTo
+
+
+                    const markets = market.length > 0 && market.includes(domainSource);
                     const matchesSearchTerm = domainSearch && domainName.includes(
                         domainSearch); // Check if the domain matches the search term
-                        
+
                     let matchesOptions = false;
-                    if (options.includes("numberOnly") && /^\d+$/.test(domainWithoutExt)) matchesOptions = true;
-                    if (options.includes("noNumber") && /^[^\d]*$/.test(domainWithoutExt)) matchesOptions = true;
-                    if (options.includes("noHyphen") && !domainWithoutExt.includes("-")) matchesOptions = true;
-                    if (options.includes("alphabets") && /^[A-Za-z]+$/.test(domainWithoutExt)) matchesOptions = true;
-                    if (options.includes("idnOnly") && /[^\u0000-\u007F]/.test(domainWithoutExt)) matchesOptions = true; // No IDN characters
-                    if (options.includes("noIdn") && !/[^\u0000-\u007F]/.test(domainWithoutExt)) matchesOptions = true; // Has IDN characters
-                    if (options.includes("alphaNumeric") && /^(?=.*[a-zA-Z])(?=.*\d).+$/.test(domainWithoutExt)) matchesOptions = true; // Only alphanumeric characters
-                    return matchesExtension || matchesPatternResult || matchesSearchTerm || matchesOptions || markets || ageStart || ageEnd || priceStart || priceEnd;
+                    if (options.includes("numberOnly") && /^\d+$/.test(domainWithoutExt)) matchesOptions =
+                        true;
+                    if (options.includes("noNumber") && /^[^\d]*$/.test(domainWithoutExt)) matchesOptions =
+                        true;
+                    if (options.includes("noHyphen") && !domainWithoutExt.includes("-")) matchesOptions =
+                        true;
+                    if (options.includes("alphabets") && /^[A-Za-z]+$/.test(domainWithoutExt))
+                        matchesOptions = true;
+                    if (options.includes("idnOnly") && /[^\u0000-\u007F]/.test(domainWithoutExt))
+                        matchesOptions = true; // No IDN characters
+                    if (options.includes("noIdn") && !/[^\u0000-\u007F]/.test(domainWithoutExt))
+                        matchesOptions = true; // Has IDN characters
+                    if (options.includes("alphaNumeric") && /^(?=.*[a-zA-Z])(?=.*\d).+$/.test(
+                            domainWithoutExt)) matchesOptions = true; // Only alphanumeric characters
+                    return matchesExtension || matchesPatternResult || matchesSearchTerm ||
+                        matchesOptions || markets || ageStart || ageEnd || priceStart || priceEnd;
                 })
 
                 // Show row if matches either the extension or the source
-                if (tlds.length === 0 && patterns.length === 0 && domainSearch === '' && options.length === 0 && market.length===0 && ageFrom==='' && ageTo==='' && priceFrom==='' && priceTo==='') {
+                if (tlds.length === 0 && patterns.length === 0 && domainSearch === '' && options.length === 0 &&
+                    market.length === 0 && ageFrom === '' && ageTo === '' && priceFrom === '' && priceTo === '') {
                     console.log('inside clearning all filter')
                     $.fn.dataTable.ext.search = [];
                 }
                 // Redraw the table with the combined filters applied
                 dataTable.draw();
             }
+
+
+
+            // csv export
+            $("#export-csv").on("click", function() {
+
+                let csvContent =
+                    "Domain List ,Domain Character Length, Domain Age, Domain Source, Listing Type, Price, Expires\r\n"; // CSV Header
+                let rowsExported = false;
+
+                dataTable.rows({
+                    filter: "applied"
+                }).every(function() {
+                    const row = this.node();
+                    const checkbox = $(row).find(".expiring-domain-checkbox");
+                    if (checkbox.prop("checked")) {
+                        const data = this.data(); // Get data from DataTable
+                        const price = `"${data[6]}"`; // Wrap price in double quotes
+                        csvContent +=
+                            `${data[1]},${data[2]},${data[3]},${data[4]},${data[5]},${price},${data[7]}\r\n`; // Include domain name
+                        rowsExported = true;
+                    }
+                });
+
+                if (!rowsExported) {
+                    alert("No rows selected for export.");
+                    return;
+                }
+
+                const blob = new Blob([csvContent], {
+                    type: "text/csv;charset=utf-8;",
+                });
+                const link = document.createElement("a");
+                const url = URL.createObjectURL(blob);
+                link.setAttribute("href", url);
+                link.setAttribute("download", "selected_rows.csv");
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            });
+
+            // excel export
+            $("#export-excel").on("click", function() {
+                let excelContent =
+                    `<table><thead><tr>
+                    <th>Domain List</th>
+                    <th>Domain Character Length</th>
+                    <th>Domain Age</th>
+                    <th>Domain Source</th>
+                    <th>Listing Type</th>
+                    <th>Price</th>
+                    <th>Expires</th></tr></thead><tbody>`;
+                let rowsExported = false;
+
+                dataTable.rows({
+                    filter: "applied"
+                }).every(function() {
+                    const row = this.node();
+                    const checkbox = $(row).find(".expiring-domain-checkbox");
+                    if (checkbox.prop("checked")) {
+                        const data = this.data(); // Get data from DataTable
+                       excelContent +=`<tr>
+                        <td>${data[1]}</td>
+                        <td>${data[2]}</td>
+                        <td>${data[3]}</td>
+                        <td>${data[4]}</td>
+                        <td>${data[5]}</td>
+                        <td>${data[6]}</td>
+                        <td>${data[7]}</td>
+                        </tr>`; // Include domain name
+                        rowsExported = true;
+                    }
+                });
+                excelContent += "</tbody></table>";
+
+                if (!rowsExported) {
+                    alert("No rows selected for export.");
+                    return;
+                }
+
+                const blob = new Blob([excelContent], {
+                    type: "application/vnd.ms-excel",
+                });
+                const link = document.createElement("a");
+                const url = URL.createObjectURL(blob);
+                link.setAttribute("href", url);
+                link.setAttribute("download", "selected_rows.xls");
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            });
 
             $(document).on('change', '.expiring-domain-checkbox-all', function() {
                 // Check or uncheck all checkboxes based on the state of the 'Check All' checkbox
